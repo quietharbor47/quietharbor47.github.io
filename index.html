@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>b站校招-哔哩哔哩校园招聘_应届生校招岗位_秋招春招投递</title>
+<meta name="description" content="b站校招主题首页：了解哔哩哔哩校园招聘的投递节奏、岗位方向与应届生求职要点，帮你理清b站校招的申请路径与准备重点。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23fb7299'/%3E%3Cpath d='M20 24h24v18a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z' fill='%23fff'/%3E%3Cpath d='M20 24l-4-6M44 24l4-6' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='28' cy='33' r='2.6' fill='%23fb7299'/%3E%3Ccircle cx='36' cy='33' r='2.6' fill='%23fb7299'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --pink:#fb7299;
+    --pink-deep:#e35b82;
+    --blue:#00a1d6;
+    --ink:#1c1c22;
+    --ink-soft:#4a4a56;
+    --line:#ececf2;
+    --bg:#f7f8fb;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{width:min(1120px,92vw);margin:0 auto}
+
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;gap:28px;height:66px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:.5px;white-space:nowrap}
+  .logo svg{width:34px;height:34px;flex:none}
+  .logo span{background:linear-gradient(90deg,var(--pink),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav.main{margin-left:auto;display:flex;gap:22px;font-size:14.5px;color:var(--ink-soft);flex-wrap:wrap}
+  nav.main a{padding:4px 0;border-bottom:2px solid transparent;transition:.2s}
+  nav.main a:hover{color:var(--pink-deep);border-color:var(--pink)}
+  .nav-cta{
+    font-size:14px;font-weight:600;color:#fff;background:var(--pink);
+    padding:8px 18px;border-radius:999px;transition:.2s;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--pink-deep)}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    background:linear-gradient(160deg,#fff3f7 0%,#eef8fd 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .hero .wrap{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:48px;
+    align-items:center;padding:64px 0 60px;
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;font-weight:600;color:var(--pink-deep);
+    background:#fff;border:1px solid #ffd9e4;
+    padding:5px 14px;border-radius:999px;margin-bottom:20px;
+  }
+  .eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--pink);display:block}
+  h1{
+    font-size:clamp(32px,4.4vw,50px);
+    line-height:1.2;letter-spacing:-.5px;font-weight:800;
+    margin-bottom:18px;
+  }
+  h1 em{font-style:normal;color:var(--pink-deep)}
+  .hero p.lead{font-size:16px;color:var(--ink-soft);max-width:34em;margin-bottom:28px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:13px 28px;border-radius:999px;font-size:15px;font-weight:600;
+    transition:.2s;cursor:pointer;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--pink);color:#fff;box-shadow:0 10px 24px -10px rgba(251,114,153,.9)}
+  .btn-primary:hover{background:var(--pink-deep);transform:translateY(-1px)}
+  .btn-ghost{background:#fff;color:var(--ink);border-color:#e2e2ec}
+  .btn-ghost:hover{border-color:var(--pink);color:var(--pink-deep)}
+  .hero-facts{display:flex;gap:32px;margin-top:38px;flex-wrap:wrap}
+  .fact b{display:block;font-size:24px;font-weight:800;color:var(--ink)}
+  .fact span{font-size:13px;color:var(--ink-soft)}
+  .hero-art{position:relative}
+  .hero-art svg{width:100%;height:auto}
+
+  /* ---------- section base ---------- */
+  section{padding:64px 0}
+  .sec-head{margin-bottom:34px;max-width:44em}
+  .sec-tag{
+    font-size:13px;font-weight:700;letter-spacing:2px;color:var(--blue);
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  h2{font-size:clamp(23px,2.6vw,30px);font-weight:800;line-height:1.35;letter-spacing:-.3px}
+  .sec-head p{margin-top:12px;color:var(--ink-soft);font-size:15px}
+
+  /* ---------- schedule ---------- */
+  .schedule{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .step{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 22px;position:relative;transition:.25s;
+  }
+  .step:hover{border-color:#ffd0de;box-shadow:0 16px 34px -22px rgba(251,114,153,.65);transform:translateY(-3px)}
+  .step .num{
+    font-size:12px;font-weight:800;color:#fff;background:var(--ink);
+    width:26px;height:26px;border-radius:8px;display:grid;place-items:center;margin-bottom:16px;
+  }
+  .step:nth-child(1) .num{background:var(--pink)}
+  .step:nth-child(2) .num{background:var(--blue)}
+  .step:nth-child(3) .num{background:#f7a02b}
+  .step:nth-child(4) .num{background:#4cbf8b}
+  .step h3{font-size:16px;font-weight:700;margin-bottom:8px}
+  .step p{font-size:13.5px;color:var(--ink-soft);line-height:1.7}
+
+  /* ---------- jobs ---------- */
+  .jobs{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+  .chip{
+    font-size:13.5px;font-weight:600;color:var(--ink-soft);
+    background:#f2f4f8;border:1px solid transparent;
+    padding:8px 18px;border-radius:999px;cursor:pointer;transition:.2s;
+    font-family:inherit;
+  }
+  .chip:hover{color:var(--pink-deep)}
+  .chip.active{background:var(--pink);color:#fff;border-color:var(--pink)}
+  .job-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .job{
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;background:#fbfbfd;transition:.25s;display:flex;flex-direction:column;
+  }
+  .job:hover{border-color:#ffd0de;background:#fff;transform:translateY(-3px);box-shadow:0 18px 36px -26px rgba(0,0,0,.3)}
+  .job .cat{font-size:12px;font-weight:700;color:var(--blue);letter-spacing:1px;margin-bottom:10px}
+  .job h3{font-size:16.5px;font-weight:700;margin-bottom:8px}
+  .job p{font-size:13.5px;color:var(--ink-soft);flex:1}
+  .job .foot{margin-top:16px;font-size:12.5px;color:#8b8b99;display:flex;justify-content:space-between;align-items:center}
+  .job .foot span:first-child{color:var(--pink-deep);font-weight:600}
+
+  /* ---------- prepare ---------- */
+  .prep-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .panel{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;
+  }
+  .panel h3{font-size:18px;font-weight:800;margin-bottom:6px}
+  .panel .sub{font-size:13px;color:#9a9aa8;margin-bottom:20px}
+  .checklist{list-style:none;display:grid;gap:16px}
+  .checklist li{display:flex;gap:12px;font-size:14px;color:var(--ink-soft);line-height:1.7}
+  .checklist li svg{flex:none;width:20px;height:20px;margin-top:3px}
+  .checklist b{color:var(--ink);font-weight:700;display:block;margin-bottom:2px;font-size:14.5px}
+  .quote{
+    margin-top:22px;background:linear-gradient(135deg,#fff3f7,#eef8fd);
+    border-radius:12px;padding:18px 20px;font-size:13.5px;color:var(--ink-soft);
+    border-left:3px solid var(--pink);
+  }
+  .quote b{color:var(--pink-deep)}
+
+  /* ---------- faq ---------- */
+  .faq{background:#fff;border-top:1px solid var(--line)}
+  .faq-list{display:grid;gap:14px;max-width:820px}
+  details{
+    background:#fbfbfd;border:1px solid var(--line);border-radius:12px;
+    padding:18px 22px;transition:.2s;
+  }
+  details[open]{border-color:#ffd0de;background:#fff}
+  summary{
+    font-size:15.5px;font-weight:700;cursor:pointer;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:14px;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{
+    content:"+";font-size:20px;font-weight:400;color:var(--pink);
+    line-height:1;transition:.2s;
+  }
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{font-size:14px;color:var(--ink-soft);margin-top:12px;line-height:1.8}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--ink);color:#c9c9d4;padding:52px 0 30px;font-size:14px}
+  .foot-top{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .foot-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;color:#fff;margin-bottom:12px}
+  .foot-brand svg{width:30px;height:30px}
+  .foot-desc{max-width:32em;line-height:1.8;color:#9d9dae;font-size:13.5px}
+  .foot-links{display:flex;gap:56px;flex-wrap:wrap}
+  .foot-col h4{color:#fff;font-size:14px;margin-bottom:14px;font-weight:700}
+  .foot-col a{display:block;font-size:13.5px;color:#9d9dae;margin-bottom:9px;transition:.2s}
+  .foot-col a:hover{color:var(--pink)}
+  .foot-bottom{padding-top:22px;font-size:12.5px;color:#7c7c8e;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:960px){
+    .hero .wrap{grid-template-columns:1fr;gap:36px;padding:44px 0 48px}
+    .hero-art{max-width:420px;margin:0 auto;order:-1}
+    .schedule{grid-template-columns:1fr 1fr}
+    .job-grid{grid-template-columns:1fr 1fr}
+    .prep-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:720px){
+    .nav-inner{height:auto;padding:12px 0;flex-wrap:wrap;gap:12px}
+    nav.main{order:3;width:100%;margin-left:0;gap:16px;font-size:13.5px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+    nav.main a{white-space:nowrap}
+    .nav-cta{margin-left:auto}
+    section{padding:46px 0}
+    .hero-facts{gap:22px}
+    .schedule{grid-template-columns:1fr}
+    .job-grid{grid-template-columns:1fr}
+    .panel{padding:24px 20px}
+    .foot-links{gap:34px}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="b站校招首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#fb7299"/>
+        <path d="M20 25h24v17a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z" fill="#fff"/>
+        <path d="M20 25l-4-6M44 25l4-6" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <circle cx="28" cy="34" r="2.6" fill="#fb7299"/>
+        <circle cx="36" cy="34" r="2.6" fill="#fb7299"/>
+      </svg>
+      <span>b站校招</span>
+    </a>
+    <nav class="main" aria-label="主导航">
+      <a href="#schedule">校招节奏</a>
+      <a href="#jobs">岗位方向</a>
+      <a href="#prepare">准备要点</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#jobs">看岗位方向</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow"><i></i>哔哩哔哩校园招聘 · 应届生专区</div>
+        <h1>b站校招</h1>
+        <p class="lead">b站校招是哔哩哔哩面向在校生与应届毕业生的人才招募通道，覆盖技术、内容、产品、运营等方向。先弄清投递节奏与岗位方向，再按自己的专业与兴趣选择入口，准备会更有着力点。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#jobs">浏览岗位方向
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#prepare">看准备要点</a>
+        </div>
+        <div class="hero-facts">
+          <div class="fact"><b>4</b><span>主要投递阶段</span></div>
+          <div class="fact"><b>5+</b><span>岗位大类方向</span></div>
+          <div class="fact"><b>2</b><span>应届求职主线：秋招与春招</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 440 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fb7299"/><stop offset="1" stop-color="#00a1d6"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#ffe3ec"/><stop offset="1" stop-color="#e3f5fd"/>
+            </linearGradient>
+          </defs>
+          <circle cx="300" cy="150" r="140" fill="url(#g2)"/>
+          <rect x="60" y="70" width="250" height="170" rx="20" fill="#fff" stroke="#ffd9e4" stroke-width="2"/>
+          <rect x="60" y="70" width="250" height="44" rx="20" fill="url(#g1)"/>
+          <circle cx="86" cy="92" r="6" fill="#fff" opacity=".85"/>
+          <circle cx="106" cy="92" r="6" fill="#fff" opacity=".6"/>
+          <circle cx="126" cy="92" r="6" fill="#fff" opacity=".4"/>
+          <rect x="88" y="136" width="110" height="12" rx="6" fill="#ffd9e4"/>
+          <rect x="88" y="160" width="180" height="9" rx="4.5" fill="#eef1f6"/>
+          <rect x="88" y="180" width="150" height="9" rx="4.5" fill="#eef1f6"/>
+          <rect x="88" y="202" width="80" height="22" rx="11" fill="#fb7299" opacity=".9"/>
+          <rect x="200" y="196" width="240" height="130" rx="18" fill="#fff" stroke="#d9eef8" stroke-width="2" transform="rotate(-4 320 261)"/>
+          <rect x="220" y="216" width="70" height="10" rx="5" fill="#bde6f6" transform="rotate(-4 320 261)"/>
+          <rect x="220" y="238" width="150" height="8" rx="4" fill="#eef1f6" transform="rotate(-4 320 261)"/>
+          <rect x="220" y="256" width="120" height="8" rx="4" fill="#eef1f6" transform="rotate(-4 320 261)"/>
+          <rect x="220" y="278" width="60" height="18" rx="9" fill="#00a1d6" opacity=".85" transform="rotate(-4 320 261)"/>
+          <circle cx="90" cy="300" r="26" fill="#fb7299" opacity=".18"/>
+          <circle cx="360" cy="60" r="16" fill="#00a1d6" opacity=".25"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Timeline</div>
+        <h2>b站校招的四个投递阶段</h2>
+        <p>校园招聘通常按时间线推进，每个阶段的任务不同。提前知道自己在哪一步，能减少临时抱佛脚的焦虑。</p>
+      </div>
+      <div class="schedule">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>关注信息发布</h3>
+          <p>留意b站校招的官方信息渠道，确认本届开启时间、投递入口与可投岗位范围，避免错过窗口期。</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>在线投递简历</h3>
+          <p>按岗位方向选择投递入口，填写教育背景、项目经历与作品材料，简历内容与目标岗位保持对应。</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>笔试与面试</h3>
+          <p>不同方向流程存在差异，技术类常见编程与专业面，内容与运营类更看重作品和表达，按通知准备。</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>录用与入职</h3>
+          <p>通过评估后进入录用沟通环节，确认岗位、地点与到岗安排，再按流程完成签约与入职准备。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jobs" id="jobs">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Directions</div>
+        <h2>岗位方向：先看大类，再定细分</h2>
+        <p>b站校招覆盖多个职能方向。点击下方标签可筛选卡片，帮助你把注意力放在最匹配的方向上。</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="岗位方向筛选">
+        <button class="chip active" data-cat="all" type="button">全部方向</button>
+        <button class="chip" data-cat="tech" type="button">技术研发</button>
+        <button class="chip" data-cat="product" type="button">产品设计</button>
+        <button class="chip" data-cat="content" type="button">内容运营</button>
+        <button class="chip" data-cat="support" type="button">职能支持</button>
+      </div>
+      <div class="job-grid" id="jobGrid">
+        <article class="job" data-cat="tech">
+          <div class="cat">技术研发</div>
+          <h3>后端 / 前端开发</h3>
+          <p>参与社区与视频业务的功能开发，关注代码质量与工程实践，适合有项目积累的计算机相关专业学生。</p>
+          <div class="foot"><span>技术类</span><span>按官方发布为准</span></div>
+        </article>
+        <article class="job" data-cat="tech">
+          <div class="cat">技术研发</div>
+          <h3>算法与数据方向</h3>
+          <p>涉及推荐、搜索、内容理解等场景，通常要求扎实的数学与编程基础，以及相关课题或实习经历。</p>
+          <div class="foot"><span>技术类</span><span>按官方发布为准</span></div>
+        </article>
+        <article class="job" data-cat="product">
+          <div class="cat">产品设计</div>
+          <h3>产品经理 / 交互设计</h3>
+          <p>从用户需求出发推动功能落地，需要清晰的逻辑表达与协作意识，作品集与项目复盘是重要材料。</p>
+          <div class="foot"><span>产品类</span><span>按官方发布为准</span></div>
+        </article>
+        <article class="job" data-cat="content">
+          <div class="cat">内容运营</div>
+          <h3>内容运营 / 社区运营</h3>
+          <p>围绕内容生态与社区氛围开展工作，熟悉平台内容形态、有创作或运营经验的同学更有优势。</p>
+          <div class="foot"><span>运营类</span><span>按官方发布为准</span></div>
+        </article>
+        <article class="job" data-cat="content">
+          <div class="cat">内容运营</div>
+          <h3>视频编导 / 视觉设计</h3>
+          <p>面向内容制作与视觉呈现岗位，作品质量是核心评估依据，投递时建议附上代表性作品链接。</p>
+          <div class="foot"><span>内容类</span><span>按官方发布为准</span></div>
+        </article>
+        <article class="job" data-cat="support">
+          <div class="cat">职能支持</div>
+          <h3>人力资源 / 市场品牌</h3>
+          <p>支撑组织运转与品牌传播，重视沟通能力与执行力，相关实习与社团经历可作为参考材料。</p>
+          <div class="foot"><span>职能类</span><span>按官方发布为准</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="prepare">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">Preparation</div>
+        <h2>投递b站校招前的准备清单</h2>
+        <p>准备的重点不是堆材料，而是让简历、作品与目标岗位形成一条清晰的对应关系。</p>
+      </div>
+      <div class="prep-grid">
+        <div class="panel">
+          <h3>材料层面</h3>
+          <div class="sub">投递前逐项核对</div>
+          <ul class="checklist">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#fb7299" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <div><b>一页简历，突出匹配项</b>把与目标方向最相关的课程、项目、实习放在靠前位置，减少无关堆砌。</div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#fb7299" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <div><b>作品与项目可追溯</b>设计、内容、技术方向都可用作品说明能力，附上链接或仓库地址便于查看。</div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#fb7299" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <div><b>理解平台与业务</b>熟悉b站的产品形态与社区文化，能在面试中说明你为什么选择这个方向。</div>
+            </li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>流程层面</h3>
+          <div class="sub">从投递到面试</div>
+          <ul class="checklist">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00a1d6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <div><b>记录投递节点</b>把投递时间、岗位名称、进度状态记在表格里，便于跟进与复盘。</div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00a1d6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <div><b>按方向准备面试</b>技术岗复盘基础与项目细节，非技术岗练习结构化表达与案例分析。</div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00a1d6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <div><b>保持信息同步</b>以官方渠道发布的时间与要求为准，遇到流程调整及时核对最新通知。</div>
+            </li>
+          </ul>
+          <div class="quote">
+            <b>小提示：</b>不同年份、不同方向的岗位与流程会随业务需要调整，本文只梳理通行思路，具体安排请以b站校招官方发布为准。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-tag">FAQ</div>
+        <h2>关于b站校招的常见疑问</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>b站校招一般面向哪些同学？</summary>
+          <p>校园招聘主要面向在校生与应届毕业生，具体届别范围、学历要求与岗位条件以当届官方发布的信息为准。非应届同学也可以关注实习类机会。</p>
+        </details>
+        <details>
+          <summary>可以同时投递多个岗位方向吗？</summary>
+          <p>投递规则由官方规定，不同届次可能不同。建议先明确一个主方向集中准备，再根据官方说明判断是否追加投递，避免材料分散。</p>
+        </details>
+        <details>
+          <summary>非技术专业有机会参加b站校招吗？</summary>
+          <p>有。内容运营、产品设计、市场品牌、人力资源等方向都对专业背景有较大包容度，更看重相关实践、作品与对平台的理解。</p>
+        </details>
+        <details>
+          <summary>在哪里获取最准确的校招信息？</summary>
+          <p>以哔哩哔哩官方招聘渠道发布的通知为准，包括开启时间、投递入口、流程安排与结果通知。第三方信息可作为补充参考，但不宜作为依据。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="16" fill="#fb7299"/>
+            <path d="M20 25h24v17a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z" fill="#fff"/>
+            <path d="M20 25l-4-6M44 25l4-6" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <circle cx="28" cy="34" r="2.6" fill="#fb7299"/>
+            <circle cx="36" cy="34" r="2.6" fill="#fb7299"/>
+          </svg>
+          b站校招
+        </div>
+        <p class="foot-desc">围绕b站校招梳理投递节奏、岗位方向与准备要点，帮助应届生把求职过程拆成可执行的步骤。页面内容为通用梳理，具体安排以官方发布为准。</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>页面导航</h4>
+          <a href="#schedule">校招节奏</a>
+          <a href="#jobs">岗位方向</a>
+          <a href="#prepare">准备要点</a>
+          <a href="#faq">常见问题</a>
+        </div>
+        <div class="foot-col">
+          <h4>求职关注</h4>
+          <a href="#jobs">技术研发方向</a>
+          <a href="#jobs">内容运营方向</a>
+          <a href="#prepare">简历与作品</a>
+          <a href="#faq">投递规则说明</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>b站校招 · 校园招聘主题首页</span>
+      <span>信息以官方渠道发布为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var chips = document.querySelectorAll('.chip');
+    var jobs = document.querySelectorAll('#jobGrid .job');
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('active'); });
+        chip.classList.add('active');
+        var cat = chip.getAttribute('data-cat');
+        jobs.forEach(function (job) {
+          var show = cat === 'all' || job.getAttribute('data-cat') === cat;
+          job.style.display = show ? 'flex' : 'none';
+        });
+      });
+    });
+  })();
+</script>
+
+</body>
+            </html>
